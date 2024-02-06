@@ -1,0 +1,28 @@
+{% load static %}
+<style>
+/* CSS */
+.nav-menu {
+    color: black;
+}
+</style>
+<div class="container">
+    <div class="row align-items-center">
+        <!-- Логотип в колонке col-md-4 -->
+
+        <!-- Меню в колонке col-md-8, центрируется по горизонтали с помощью mx-auto -->
+        <div class="col-md-8 mx-auto">
+            <nav>
+                <big>
+                    <div class="dropdown">
+                        <li><a href="{% url 'map' %}" {% if request.resolver_match.url_name != 'map' %}class="nav-menu"{% endif %}>Карта</a></li>
+                        <li class="spacer"></li>
+                        <li><a href="{% url 'about' %}" {% if request.resolver_match.url_name != 'about' %}class="nav-menu"{% endif %}>О нас</a></li>
+                    </div>
+                </big>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+

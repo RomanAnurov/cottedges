@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Форма заявки</h2>
+
+    <!-- Booking Form with Bootstrap styling -->
+    <form method="post" action="{% url 'booking' %}">
+    {% csrf_token %}
+
+    <div class="form-column">
+        <div>{{ form.name.label_tag }}</div>
+        <div>{{ form.name }}</div><br>
+        <div>{{ form.phone.label_tag }}</div>
+        <div>{{ form.phone }}</div><br>
+        <div>{{ form.comment.label_tag }}</div>
+        <div>{{ form.comment }}</div>
+        <br>
+    </div>
+
+    <div style="width: 100%; margin-top: 20px;">
+        <button type="submit">Забронировать</button>
+    </div>
+</form>
+</div>
+
+{% endblock %}

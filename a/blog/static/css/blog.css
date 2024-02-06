@@ -1,0 +1,742 @@
+.header {
+    padding: 0 30px;
+    height: 91px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #c3c3c3b7;
+}
+
+.header__logo {
+    max-width: 271px;
+}
+
+.header__address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__address-icon {
+    background-image: url(../img/locationIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.header__address-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.header__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__callback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__callback-icon {
+    background-image: url(../img/phoneIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    height: 28px;
+    width: 26px;
+    margin-right: 22px;
+}
+
+.header__callback-number {
+    margin: 0;
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.header__callback-link {
+    margin: 14px 0 0;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #000;
+
+}
+
+.form__link {
+    display: block;
+    margin: 30px 0 64px;
+    line-height: 1.2;
+    font-size: 22px;
+}
+
+.advantages-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage-column {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.advantage-column h2 {
+    margin-bottom: 10px;
+}
+
+.advantage-column form,
+.advantage-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantage-column textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.advantage-column button {
+    display: block;
+    margin-top: 10px;
+}
+
+.advantage-column ul li {
+    margin-bottom: 5px;
+}
+
+.criteria {
+    display: flex;
+    justify-content: space-between;
+}
+
+.criteria-row {
+    display: flex;
+}
+
+.criteria-item {
+    flex: 1;
+    text-align: center;
+}
+
+.criteria-name {
+    font-weight: bold;
+}
+
+.criteria-score {
+    margin-top: 5px;
+}
+
+.criteria-table {
+    width: 100%;
+}
+
+.criteria-table th,
+.criteria-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.criteria-table th {
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropbtn:hover .dropdown-content {
+    display: block;
+
+}
+
+/* Остальной CSS код... */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Остальной CSS код... */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-link.active {
+    font-weight: bold;
+}
+
+.menu-link.active {
+    font-weight: bold;
+}
+
+.nav-active {
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.spacer {
+    margin-right: 20px;
+    /* Установите желаемую ширину отступа здесь */
+}
+
+
+
+/* @media (min-width: 1835px) { */
+/* Стили для формы */
+form {
+    width: 90%;
+    /* Занимать всю ширину экрана */
+    margin: 0 auto;
+    /* Центрирование формы на странице */
+}
+
+/* Стили для столбцов */
+.form-column {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 0px;
+}
+
+/* Стили для полей ввода */
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+#info-block {
+    display: none;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /* Adjust the width based on your design */
+    max-width: 550px;
+    /* Set a max-width to prevent it from becoming too wide */
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+    font-size: 22px;
+    transition: opacity 0.5s ease;
+}
+
+
+#info-block .cross {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#info-block .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform-origin: center;
+    transition: background-color 0.3s ease;
+}
+
+#info-block .line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#info-block .line:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+#info-block .cross:hover .line {
+    background-color: #555;
+}
+
+
+
+
+
+body {
+    width: 100%;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {}
+
+.menu-container {
+    position: absolute;
+    top: 0%;
+    left: 43.5%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    font-size: 21px;
+}
+
+.house-fon1__content {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+}
+
+.house-fon1__text {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.menu-container2 {
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.menu-container3 {
+    position: absolute;
+    top: 196%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    text-align: center;
+}
+
+.menu-container4 {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.menu-container6 {
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu-container7 {
+    width: 100%;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Центрируем элементы по горизонтали */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+p {
+    margin: 0;
+    font-size: 17px;
+    /* font-family: Calibri, sans-serif; */
+}
+
+.svg-container {
+    position: relative;
+}
+
+.schema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 40px 0;
+
+}
+
+.schema__span {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000;
+}
+
+.svg-container img {
+    position: absolute;
+    transition: filter 0.3s ease;
+}
+
+.svg-container img.sold {
+    filter: brightness(70%) sepia(50%) hue-rotate(25deg) saturate(40%);
+    pointer-events: none;
+}
+
+.svg-container img.sold2 {
+    pointer-events: none;
+}
+
+/* .svg-container path:hover {
+        filter: brightness(70%) sepia(50%) hue-rotate(100deg) saturate(50%);
+    } */
+
+/* Стили для изображения в шапке */
+.svg-container2 img {
+    filter: brightness(70%) sepia(50%) hue-rotate(100deg) saturate(50%);
+}
+
+
+#info-content {
+    margin-top: 20px;
+    transition: opacity 0.5s ease;
+}
+
+#bookingButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/* Стили для изображения в шапке */
+#header-image {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    display: block;
+    /* Убеждаемся, что изображение является блочным элементом */
+    position: relative;
+    /* Устанавливаем позицию для создания контекста для абсолютно позиционированных элементов внутри */
+}
+
+#header-image2 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    /* Убеждаемся, что изображение является блочным элементом */
+    position: relative;
+    /* Устанавливаем позицию для создания контекста для абсолютно позиционированных элементов внутри */
+}
+
+.schema__image {
+    max-width: 867px;
+    width: 100%;
+
+}
+
+#header-image3 {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    display: block;
+    /* Убеждаемся, что изображение является блочным элементом */
+    position: relative;
+    /* Устанавливаем позицию для создания контекста для абсолютно позиционированных элементов внутри */
+}
+
+#header-image4 {
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    display: block;
+    /* Убеждаемся, что изображение является блочным элементом */
+    position: relative;
+    /* Устанавливаем позицию для создания контекста для абсолютно позиционированных элементов внутри */
+}
+
+/* Стили для логотипа */
+.col-md-4 a img {
+    position: absolute;
+    /* Позиционируем логотип абсолютно относительно родительского блока */
+    top: 10px;
+    /* Верхний отступ (на ваш выбор) */
+    left: 10px;
+    /* Левый отступ (на ваш выбор) */
+    z-index: 2;
+    /* Устанавливаем z-index больше, чем у изображения, чтобы логотип был поверх него */
+}
+
+
+
+.footer-part-wrapper,
+.header-part-wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 45px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* "{% static 'pics/9.png' %} */
+
+.footer-part-wrapper {
+    background: url(../img2/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-part-wrapper {
+    background-image: url(../img2/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.house-fon1 {
+    width: 100%;
+    height: 100vh;
+    padding: 45px 12px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(../pics/house1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+
+}
+
+.map-dash {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 70px 25px;
+
+
+}
+
+
+
+.map-dash svg {
+    width: 100%;
+    height: 100%;
+    /* padding: 65px 25px; */
+}
+
+
+
+@media (max-width:475px) {
+
+    .map-dash {
+        padding: 65px 25px 5px 25px;
+        margin-bottom: 65px;
+        overflow: auto;
+
+    }
+
+    .map-dash::-webkit-scrollbar {
+
+        background-color: transparent;
+        height: 4px;
+    }
+
+    .map-dash::-webkit-scrollbar-thumb {
+        background: rgba(234, 234, 237, 0.7);
+
+
+
+    }
+
+    .map-dash svg {
+        width: auto;
+    }
+
+    .menu-container {
+        left: unset;
+    }
+
+    .menu-container7 {
+        font-size: 21px;
+    }
+
+}
+
+
+
+.sold {
+    filter: brightness(70%) sepia(50%) hue-rotate(25deg) saturate(40%);
+    pointer-events: none;
+}
+
+@media (max-width:425px) {
+    h5 {
+        margin: 0;
+        font-size: 22px;
+        font-family: Calibri, sans-serif;
+    }
+
+    p {
+        margin: 0;
+        font-size: 22px;
+        font-family: Calibri, sans-serif;
+    }
+}
+
+.path-style {
+    cursor: pointer;
+}
+
+.path-style:hover {
+
+    filter: brightness(70%) sepia(50%) hue-rotate(100deg) saturate(50%);
+}
+.mt-5 {
+    max-width: 350px;
+    margin-top: 9rem!important;
+}
+
+.col-md-9 {
+    padding: 64px 0;
+    width: 100%;
+}

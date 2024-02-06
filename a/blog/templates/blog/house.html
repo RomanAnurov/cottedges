@@ -1,0 +1,53 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block house %}
+
+<div class="menu-container2">
+   <a class="menu-container2-href" href="#schema-container" style="color: #fff"> <img src="{% static 'img/angleDownIcon.svg' %}" alt="уголок" /></a>
+       
+</div>
+
+</div>
+
+
+<div class="menu-container3">
+<nav>
+    <ul>
+        <li><a href="#contacts">Контакты</a>
+            <a href="#contacts">↓</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+
+
+<div class="house-fon1" id="fon1">
+<div class="house-fon1__content">
+    <span class="house-fon1__text">169 м2</span>
+    <span class="house-fon1__text">169 м2</span>
+    <span class="house-fon1__text">169 м2</span>
+    <span class="house-fon1__text">169 м2</span>
+    
+</div>
+</div>
+
+
+
+<div class="schema" id="schema-container">
+    <span class="schema__span">Подробности о проекте</span>
+        <img class="schema__image" src="{% static 'pics/schemaHouse.webp' %}">
+</div>
+
+<div class="footer-part-wrapper" id="contacts">
+<div class="content">
+    <span style="color: white">
+        Коттеджный поселок «Долина Сенгилей»<br><br>
+        Ставропольский край, Шпаковский район, х. Садовый
+    </span><br><br>
+    <a href="{% url 'booking' %}">
+        <button id="bookingButton">Перезвоните мне</button>
+    </a>
+</div>
+</div>
+{% endblock %}
