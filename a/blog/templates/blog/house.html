@@ -3,51 +3,55 @@
 {% block house %}
 
 <div class="menu-container2">
-   <a class="menu-container2-href" href="#schema-container" style="color: #fff"> <img src="{% static 'img/angleDownIcon.svg' %}" alt="уголок" /></a>
-       
-</div>
+    <a class="menu-container2-href" href="#schema-container" style="color: #fff"> <img
+            src="{% static 'img/angleDownIcon.svg' %}" alt="уголок" /></a>
 
 </div>
-
-
-<div class="menu-container3">
-<nav>
-    <ul>
-        <li><a href="#contacts">Контакты</a>
-            <a href="#contacts">↓</a>
-        </li>
-    </ul>
-</nav>
-</div>
-
-
 
 <div class="house-fon1" id="fon1">
-<div class="house-fon1__content">
-    <span class="house-fon1__text">169 м2</span>
-    <span class="house-fon1__text">169 м2</span>
-    <span class="house-fon1__text">169 м2</span>
-    <span class="house-fon1__text">169 м2</span>
-    
-</div>
-</div>
+    <div class="house-fon1__content">
+        <span class="house-fon1__text">169 м2</span>
+        <span class="house-fon1__text">169 м2</span>
+        <span class="house-fon1__text">169 м2</span>
+        <span class="house-fon1__text">169 м2</span>
 
-
+    </div>
+</div>
 
 <div class="schema" id="schema-container">
     <span class="schema__span">Подробности о проекте</span>
-        <img class="schema__image" src="{% static 'pics/schemaHouse.webp' %}">
+    <a data-fancybox href="{% static 'pics/schemaHouse.jpg' %}" data-caption="Hello world">
+        <img class="schema__image" src="{% static 'pics/schemaHouse.jpg' %}" />
+    </a>
+
+    <div class="schema__nav">
+        <nav>
+            <ul>
+                <li><a class="schema__nav-link" href="#contacts">Контакты</a>
+                    <a href="#contacts"><img
+                        src="{% static 'img/angleDownIconBlack.svg' %}" alt="уголок" /></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </div>
 
 <div class="footer-part-wrapper" id="contacts">
-<div class="content">
-    <span style="color: white">
-        Коттеджный поселок «Долина Сенгилей»<br><br>
-        Ставропольский край, Шпаковский район, х. Садовый
-    </span><br><br>
-    <a href="{% url 'booking' %}">
-        <button id="bookingButton">Перезвоните мне</button>
-    </a>
+    <div class="content">
+        <span style="color: white">
+            Коттеджный поселок «Долина Сенгилей»<br><br>
+            Ставропольский край, Шпаковский район, х. Садовый
+        </span><br><br>
+        <a href="{% url 'booking' %}">
+            <button id="bookingButton">Перезвоните мне</button>
+        </a>
+    </div>
 </div>
-</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox]', {
+
+    });    
+</script>
 {% endblock %}

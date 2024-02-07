@@ -484,11 +484,13 @@ p {
 }
 
 .schema {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 40px 0;
+    padding: 91px 0 40px;
+    
 
 }
 
@@ -499,6 +501,26 @@ p {
     font-weight: 700;
     color: #000;
 }
+
+.schema__nav {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schema__nav-link{
+    font-size: 24px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.schema__nav-link:hover{
+  text-decoration: underline;
+}
+
 
 .svg-container img {
     position: absolute;
@@ -564,7 +586,7 @@ p {
 }
 
 .schema__image {
-    max-width: 867px;
+    max-width: 800px;
     width: 100%;
 
 }
