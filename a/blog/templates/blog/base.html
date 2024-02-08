@@ -17,8 +17,8 @@
 <body>
     {% block header %}
     <header class="header">
-        <a class="header__logo" href="{% url 'map' %}">
-            <img src="{% static 'img/logo.svg' %}" alt="Logo" />
+        <a href="{% url 'map' %}">
+            <img class ='header__logo' src="{% static 'img/logo.svg' %}" alt="Logo" />
         </a>
         <div class="header__address">
             <div class="header__address-icon"></div>
